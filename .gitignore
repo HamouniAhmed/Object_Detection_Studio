@@ -1,0 +1,28 @@
+# --- Model weights ---
+# model.pt is intentionally committed (public YOLOv8n demo weights)
+best.pt
+*.onnx
+*.engine
+# Block any other .pt files that are NOT the demo model
+yolov8n.pt
+yolov8s.pt
+yolov8m.pt
+yolov8l.pt
+yolov8x.pt
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- IDE ---
+.vscode/
+.idea/
+*.code-workspace
