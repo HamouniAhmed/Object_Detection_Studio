@@ -1,26 +1,26 @@
-# 🔍 Object Detection Studio
+#  Object Detection Studio
 
-> **A plug-and-play desktop application for real-time object detection — works with any YOLOv8 / Ultralytics-compatible model.**
+> **A desktop application for real-time object detection, works with any YOLOv8 / Ultralytics-compatible model.**
 
 Built with Python, [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics), and [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter).
 
 ---
 
-## ✨ Features
+##  Features
 
 | Feature | Details |
 |---|---|
-| 📷 **Live Camera Detection** | Real-time inference from any webcam |
-| 🖼️ **Image Detection** | Run detection on static `.jpg / .png / .bmp / .webp` files |
-| 🎨 **Colour-coded Bounding Boxes** | Up to 10 per-class distinct colours |
-| 📊 **Live Results Panel** | Class name + confidence score for every detection |
-| 💾 **Export TXT** | Save a full detection report as a `.txt` file |
-| 🖨️ **Export PDF** | Generate a formatted PDF label / report |
-| 🔌 **Swap-able Model** | Drop in any YOLOv8 `.pt` file — no code changes needed |
+|  **Live Camera Detection** | Real-time inference from any webcam |
+|  **Image Detection** | Run detection on static `.jpg / .png / .bmp / .webp` files |
+|  **Colour-coded Bounding Boxes** | Up to 10 per-class distinct colours |
+|  **Live Results Panel** | Class name + confidence score for every detection |
+|  **Export TXT** | Save a full detection report as a `.txt` file |
+|  **Export PDF** | Generate a formatted PDF label / report |
+|  **Swap-able Model** | Drop in any YOLOv8 `.pt` file — no code changes needed |
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 object-detection-studio/
@@ -46,26 +46,11 @@ object-detection-studio/
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1 · Clone the repository
 
-```bash
-git clone https://github.com/<your-username>/object-detection-studio.git
-cd object-detection-studio
-```
-
 ### 2 · Create & activate a virtual environment *(recommended)*
-
-```bash
-# Windows
-python -m venv .venv
-.venv\Scripts\activate
-
-# macOS / Linux
-python3 -m venv .venv
-source .venv/bin/activate
-```
 
 ### 3 · Install dependencies
 
@@ -79,21 +64,18 @@ pip install -r requirements.txt
 python app_main.py
 ```
 
-> `model.pt` is already included — no extra download needed. The app starts immediately.
+> `model.pt` is already included no extra download needed. 
 
 ---
 
-## 🔌 Using Your Own Custom Model
+## Using Your Own Custom Model
 
 1. Copy your YOLOv8 `.pt` file into the project root.
 2. Rename it to `model.pt` (replaces the demo model).
 3. Run `python app_main.py`.
-
-The status bar will automatically display the model name and number of detected classes.
-
 ---
 
-## 🖥️ System Requirements
+## System Requirements
 
 | Requirement | Minimum |
 |---|---|
@@ -105,7 +87,7 @@ The status bar will automatically display the model name and number of detected 
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 | Package | Purpose |
 |---|---|
@@ -115,13 +97,8 @@ The status bar will automatically display the model name and number of detected 
 | `Pillow` | Image rendering on the canvas |
 | `reportlab` | *(Optional)* PDF label export |
 
-```bash
-pip install -r requirements.txt
-```
 
----
-
-## 🗺️ How It Works
+##  How It Works
 
 ```
 User Input (Camera / Image)
@@ -141,22 +118,10 @@ User Input (Camera / Image)
         └── Export ──▶ app/exporter.py ──▶ .txt / .pdf
 ```
 
-See [`architecture.md`](architecture.md) for the full interactive Mermaid diagrams.
-
----
-
-## 📄 License
-
-Released under the **MIT License** — free to use in personal and commercial projects.
-
----
-
-## 🙌 Acknowledgements
+##  Acknowledgements
 
 - [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) — state-of-the-art real-time object detection
 - [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) — modern Tkinter theme
 - [OpenCV](https://opencv.org/) — computer vision backbone
 
 ---
-
-*Built as a reusable template for industrial and hobbyist computer vision desktop apps.*
